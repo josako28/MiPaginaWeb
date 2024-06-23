@@ -1,39 +1,40 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pago de Producto 2</title>
+    <title>Pagar Producto 2 - MISLATAZON</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1><img src="logo.jpg" alt="MISLATAZON" class="logo"> MISLATAZON</h1>
+        <img src="logo.jpg" alt="MISLATAZON Logo" class="logo">
+        <h1>MISLATAZON</h1>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="index.html#productos">Productos</a>
-            <a href="productos_sueltos.html">Productos Sueltos</a>
-            <a href="about.html">Sobre Nosotros</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="productos_sueltos.html">Productos Sueltos</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <section id="pago">
-            <h2>Pago de Producto 2</h2>
+        <section>
+            <h2>Pagar Producto 2</h2>
             <form action="procesar_pago.html" method="GET">
+                <input type="hidden" name="producto" value="Producto 2">
+                <input type="hidden" name="precio" value="100.00">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
                 <label for="direccion">Dirección:</label>
                 <input type="text" id="direccion" name="direccion" required>
                 <label for="tarjeta">Número de Tarjeta:</label>
                 <input type="text" id="tarjeta" name="tarjeta" required>
-                <input type="hidden" name="producto" value="Producto 2">
-                <input type="hidden" name="precio" value="100.00">
                 <button type="submit">Pagar $100.00</button>
             </form>
         </section>
     </main>
-    <footer>
-        <p>© 2024 MISLATAZON. Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>
