@@ -35,6 +35,15 @@ h1, h2 {
     color: #007bff;
 }
 
+.anuncio {
+    text-align: center;
+    margin: 2em 0;
+}
+
+    .anuncio h2 {
+        color: #007bff;
+    }
+
 .productos {
     display: flex;
     justify-content: space-around;
