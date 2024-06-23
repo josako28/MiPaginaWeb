@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Procesado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MISLATAZON</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#productos">Productos</a>
+            <a href="about.html">Sobre Nosotros</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Pago Procesado</h2>
+        <p>Gracias, <span id="nombre"></span>. Su pago para <span id="producto"></span> ha sido procesado exitosamente. El total es <span id="precio"></span>.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 MISLATAZON. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('nombre').textContent = urlParams.get('nombre');
+        document.getElementById('producto').textContent = urlParams.get('producto');
+        document.getElementById('precio').textContent = '$' + urlParams.get('precio');
+    </script>
+</body>
+</html>
