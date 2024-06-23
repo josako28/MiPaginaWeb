@@ -6,13 +6,77 @@ body {
     padding: 0;
 }
 
-h1 {
-    color: #007bff;
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    margin-top: 50px;
 }
 
-p {
+    header h1 {
+        margin: 0;
+    }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#productos {
+    padding: 20px;
     text-align: center;
-    font-size: 18px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+}
+
+    .producto img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .producto h3 {
+        margin: 10px 0 5px 0;
+    }
+
+    .producto p {
+        margin: 5px 0;
+    }
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
