@@ -12,6 +12,10 @@ header {
     text-align: center;
 }
 
+    header h1 {
+        color: yellow; /* Cambia este color a lo que desees */
+    }
+
     header nav ul {
         list-style-type: none;
         padding: 0;
