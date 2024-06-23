@@ -8,48 +8,44 @@
 </head>
 <body>
     <header>
-        <h1><img src="logo.jpg" alt="MISLATAZON" class="logo"> MISLATAZON</h1>
+        <img src="logo.jpg" alt="MISLATAZON Logo" class="logo">
+        <h1>MISLATAZON</h1>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="index.html#productos">Productos</a>
-            <a href="productos_sueltos.html">Productos Sueltos</a>
-            <a href="about.html">Sobre Nosotros</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="productos_sueltos.html">Productos Sueltos</a></li>
+                <li><a href="index.html#sobrenosotros">Sobre Nosotros</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section id="productos_sueltos">
-            <h2>Productos Sueltos</h2>
-            <p>Compra productos sueltos que MISLATAZON tiene en stock sin necesidad de comprar una caja. Encuentra ofertas increíbles en una variedad de artículos.</p>
-            <div class="productos">
-                <div class="producto">
-                    <img src="producto1.jpg" alt="Producto Suelto 1">
-                    <h3>Producto Suelto 1</h3>
-                    <p>Descripción del Producto Suelto 1. Precio: $10.00</p>
-                    <a href="pago_suelto1.html"><button>Comprar</button></a>
-                </div>
-                <div class="producto">
-                    <img src="producto2.jpg" alt="Producto Suelto 2">
-                    <h3>Producto Suelto 2</h3>
-                    <p>Descripción del Producto Suelto 2. Precio: $20.00</p>
-                    <a href="pago_suelto2.html"><button>Comprar</button></a>
-                </div>
-                <div class="producto">
-                    <img src="producto3.jpg" alt="Producto Suelto 3">
-                    <h3>Producto Suelto 3</h3>
-                    <p>Descripción del Producto Suelto 3. Precio: $30.00</p>
-                    <a href="pago_suelto3.html"><button>Comprar</button></a>
-                </div>
-                <div class="producto">
-                    <img src="producto4.jpg" alt="Producto Suelto 4">
-                    <h3>Producto Suelto 4</h3>
-                    <p>Descripción del Producto Suelto 4. Precio: $40.00</p>
-                    <a href="pago_suelto4.html"><button>Comprar</button></a>
-                </div>
-            </div>
-        </section>
-    </main>
+
+    <section class="hero">
+        <h2>Productos Sueltos</h2>
+        <p>Compra productos sueltos que MISLATAZON tiene en stock. Estos productos están disponibles para la venta sin necesidad de comprar una caja.</p>
+    </section>
+
+    <section class="productos">
+        <h2>Productos en Stock</h2>
+        <div class="producto">
+            <img src="producto1_suelto.jpg" alt="Producto Suelto 1">
+            <h3>Producto Suelto 1</h3>
+            <p>Descripción breve del Producto Suelto 1.</p>
+            <p>$10.00</p>
+            <button onclick="window.location.href='pago_producto1.html'">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="producto2_suelto.jpg" alt="Producto Suelto 2">
+            <h3>Producto Suelto 2</h3>
+            <p>Descripción breve del Producto Suelto 2.</p>
+            <p>$20.00</p>
+            <button onclick="window.location.href='pago_producto2.html'">Comprar</button>
+        </div>
+        <!-- Agrega más productos sueltos según sea necesario -->
+    </section>
+
     <footer>
-        <p>© 2024 MISLATAZON. Todos los derechos reservados.</p>
+        <p>&copy; 2024 MISLATAZON. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
