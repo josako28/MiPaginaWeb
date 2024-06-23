@@ -8,25 +8,35 @@
 </head>
 <body>
     <header>
-        <h1>MISLATAZON</h1>
+        <h1><img src="logo.jpg" alt="MISLATAZON" class="logo"> MISLATAZON</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="index.html#productos">Productos</a>
+            <a href="productos_sueltos.html">Productos Sueltos</a>
             <a href="about.html">Sobre Nosotros</a>
         </nav>
     </header>
     <main>
-        <h2>Pago Procesado</h2>
-        <p>Gracias, <span id="nombre"></span>. Su pago para <span id="producto"></span> ha sido procesado exitosamente. El total es <span id="precio"></span>.</p>
+        <section id="pago_procesado">
+            <h2>Pago Procesado</h2>
+            <p>Gracias, <span id="nombre_cliente"></span>. Su pago para <span id="producto"></span> ha sido procesado exitosamente. El total es <span id="precio"></span>.</p>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 MISLATAZON. Todos los derechos reservados.</p>
+        <p>© 2024 MISLATAZON. Todos los derechos reservados.</p>
     </footer>
+
     <script>
+        // Obtener parámetros de la URL
         const urlParams = new URLSearchParams(window.location.search);
-        document.getElementById('nombre').textContent = urlParams.get('nombre');
-        document.getElementById('producto').textContent = urlParams.get('producto');
-        document.getElementById('precio').textContent = '$' + urlParams.get('precio');
+        const nombre = urlParams.get('nombre');
+        const producto = urlParams.get('producto');
+        const precio = urlParams.get('precio');
+
+        // Mostrar valores en la página
+        document.getElementById('nombre_cliente').textContent = nombre;
+        document.getElementById('producto').textContent = producto;
+        document.getElementById('precio').textContent = '$' + precio;
     </script>
 </body>
 </html>

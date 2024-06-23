@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pago - Producto 3</title>
+    <title>Pago de Producto 3</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>MISLATAZON</h1>
+        <h1><img src="logo.jpg" alt="MISLATAZON" class="logo"> MISLATAZON</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="index.html#productos">Productos</a>
+            <a href="productos_sueltos.html">Productos Sueltos</a>
             <a href="about.html">Sobre Nosotros</a>
         </nav>
     </header>
     <main>
-        <h2>Pago - Producto 3</h2>
-        <form action="procesar_pago.html" method="get">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required><br>
-            <label for="tarjeta">Número de Tarjeta:</label>
-            <input type="text" id="tarjeta" name="tarjeta" required><br>
-            <input type="hidden" name="producto" value="Producto 3">
-            <input type="hidden" name="precio" value="150.00">
-            <button type="submit">Pagar $150.00</button>
-        </form>
+        <section id="pago">
+            <h2>Pago de Producto 3</h2>
+            <form action="procesar_pago.html" method="GET">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                <label for="tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="tarjeta" name="tarjeta" required>
+                <input type="hidden" name="producto" value="Producto 3">
+                <input type="hidden" name="precio" value="150.00">
+                <button type="submit">Pagar $150.00</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 MISLATAZON. Todos los derechos reservados.</p>
+        <p>© 2024 MISLATAZON. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
