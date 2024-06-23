@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISLATAZON - Tu tienda de cajas sorpresa</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function mostrarHistoria() {
+            document.getElementById('historia').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -20,6 +25,7 @@
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Productos</a></li>
+            <li><a href="#" onclick="mostrarHistoria()">Sobre Nosotros</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
@@ -53,6 +59,35 @@
                 <p>Esta caja cuesta 300 euros y contiene 80 productos aleatorios cuyo valor total supera el precio de la caja.</p>
                 <p>$300.00</p>
                 <button>Comprar</button>
+            </div>
+        </div>
+        <div id="historia" style="display:none;">
+            <h2>La Historia de MISLATAZON</h2>
+            <div class="historia">
+                <p>
+                    Juan García siempre fue una persona con un espíritu emprendedor. Desde joven, tenía un sueño de tener su propio negocio, pero no sabía por dónde empezar. Un día, navegando por internet, descubrió una oportunidad única: la compra de palets de productos de Amazon. Estos palets contenían una variedad de productos, muchos de los cuales eran devoluciones o excedentes de inventario. Juan vio en esto una oportunidad dorada.
+                </p>
+                <p>
+                    Juan comenzó su aventura comprando su primer palet de Amazon con los ahorros que había acumulado trabajando en su empleo de tiempo completo. El palet contenía una amplia gama de productos: desde electrónicos, ropa, juguetes, hasta utensilios de cocina. Juan pasó días revisando y categorizando cada artículo, aprendiendo sobre su valor y potencial de reventa.
+                </p>
+                <p>
+                    Dándose cuenta del potencial de su hallazgo, Juan decidió llevar su idea al siguiente nivel. Así nació MISLATAZON, una plataforma dedicada a vender cajas sorpresa de productos seleccionados de los palets de Amazon. Cada caja fue diseñada para ofrecer un valor significativamente mayor al precio pagado, proporcionando una emocionante oportunidad para pequeños emprendedores y revendedores.
+                </p>
+                <p>
+                    La misión de MISLATAZON es simple pero poderosa: ayudar a otros a emprender. Juan quería que cada cliente de MISLATAZON tuviera la oportunidad de triplicar su inversión a través de la reventa de los productos obtenidos en las cajas. Para asegurar esto, cada caja está cuidadosamente curada para contener productos de alta demanda y buen estado.
+                </p>
+                <p>
+                    Desde su lanzamiento, MISLATAZON ha ayudado a cientos de emprendedores a iniciar sus propios negocios de reventa. Los testimonios de clientes satisfechos inundan la web, contando historias de cómo pudieron vender los productos de sus cajas y obtener grandes beneficios.
+                </p>
+                <p>
+                    María López: "Compré una caja de 100 euros y logré vender los productos por más de 300 euros. Gracias a MISLATAZON, he comenzado mi pequeño negocio de reventa en línea."
+                </p>
+                <p>
+                    Carlos Fernández: "La calidad de los productos es increíble. Cada caja es una sorpresa y siempre termino ganando más de lo que invierto."
+                </p>
+                <p>
+                    Juan no solo ha creado una empresa, sino una comunidad de emprendedores. MISLATAZON sigue creciendo y expandiéndose, con planes de incluir más categorías de productos y ofrecer más recursos educativos para ayudar a sus clientes a maximizar sus ganancias. La visión de Juan es clara: empoderar a cada persona con el deseo de emprender, ofreciéndoles las herramientas y oportunidades para triunfar.
+                </p>
             </div>
         </div>
     </main>
