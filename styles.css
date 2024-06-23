@@ -75,7 +75,8 @@ footer {
     background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px; /* Reduce el padding para hacerlo más pequeño */
+    font-size: 12px; /* Reduce el tamaño de la fuente */
     position: fixed;
     width: 100%;
     bottom: 0;
