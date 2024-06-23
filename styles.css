@@ -6,36 +6,24 @@ body {
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #007bff;
     color: white;
-    padding: 10px;
     text-align: center;
-    position: relative;
+    padding: 10px 0;
 }
 
     header .logo {
-        width: 50px;
-        height: auto;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-    }
-
-    header h1 {
-        margin: 0;
-        padding: 0;
+        max-width: 150px;
     }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
     nav ul li {
-        margin: 0 15px;
+        display: inline;
+        margin: 0 10px;
     }
 
         nav ul li a {
@@ -47,23 +35,21 @@ main {
     padding: 20px;
 }
 
-#productos {
-    text-align: center;
-}
-
-.productos-contenedor {
+.productos-grid {
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
 }
 
 .producto {
+    background-color: white;
     border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(20% - 40px); /* Ajuste del ancho para 5 productos en una fila */
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -71,3 +57,17 @@ main {
         max-width: 100%;
         height: auto;
     }
+
+    .producto .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .producto .btn:hover {
+            background-color: #0056b3;
+        }
