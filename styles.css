@@ -54,7 +54,8 @@ main {
 .productos-contenedor {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Cambio aquí */
+    overflow-x: auto; /* Cambio aquí */
 }
 
 .producto {
@@ -75,8 +76,8 @@ footer {
     background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 5px; /* Reduce el padding para hacerlo más pequeño */
-    font-size: 12px; /* Reduce el tamaño de la fuente */
+    padding: 5px;
+    font-size: 12px;
     position: fixed;
     width: 100%;
     bottom: 0;
