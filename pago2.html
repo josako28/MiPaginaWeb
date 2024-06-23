@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Producto 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.jpg" alt="MISLATAZON Logo" class="logo">
+            <h1 class="header-text">MISLATAZON</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Pago - Producto 2</h2>
+        <p>Estás a punto de comprar una caja sorpresa con 15 productos aleatorios por $100.00.</p>
+        <form action="procesar_pago.html" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="metodo-pago">Método de Pago:</label>
+            <select id="metodo-pago" name="metodo-pago" required>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit">Pagar $100.00</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 MISLATAZON. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
